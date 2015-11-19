@@ -1,0 +1,59 @@
+====== Server-Side Setup ======
+
+===== Setup DNS =====
+Each OunchKiosk project will has a domain name assigned to it, e.g. http://project_name.ounchkiosk.com.  This setup is done on the DNS server, through the creating of "A" record.
+
+==== Login to cp.readyspace.com.my ====
+
+<code>
+User: omniphics
+Add "A" Record to DNS, project_name.ounchkiosk.com, pointing to 117.120.7.35
+</code>
+
+===== Setup Backend =====
+We now need to setup the OunchKiosk Webserver to host the project.
+
+==== Create source folder for the project ====
+Login to ounchkiosk.com as "root"
+
+<code>
+    - cd /home/ounch/sources
+    - mkdir project_name.ounchkiosk.com
+    - cd project_name.ounchkiosk.com
+    - mkdir 1.x (software version)
+    - ln -s 1.x current
+    - cd ..
+    - chown -R ounch.ounch project_name.ounchkiosk.com
+</code>
+
+==== Setup Apache Web Server to serve this new site ====
+Setup Webserver
+<code>
+    - cd /etc/apache2/sites-available
+    - cp template project_name.ounchkiosk.com
+    - Edit project_name.ounchkiosk.com
+      - Line3: Change "project_name.ounchkiosk.com"
+      - Line 5: Change "/var/www/project_name.ounchkiosk.com"
+    - cd /var/www
+    - ln -s /home/ounch/sources/project_name.ounchkiosk.com/current project_name.ounchkiosk.com
+</code>
+
+Setup Content Folder
+<code>
+    - cd /var/www/content
+    - mkdir project_name.ounchkiosk.com
+    - chown www-data.www-data project_name.ounchkiosk.com
+</code>
+
+Setup Sync Folder
+<code>
+    - cd /var/www/sync_content
+    - mkdir project_name.ounchkiosk.com
+    - chown www-data.www-data project_name.ounchkiosk.com
+</code>
+
+Enable new domain in Webserver
+<code>
+    - a2ensite project_name.ounchkiosk.com
+    - service apache2 restart
+</code>

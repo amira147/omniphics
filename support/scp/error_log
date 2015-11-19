@@ -1,0 +1,21 @@
+[16-Feb-2011 13:18:00] PHP Parse error:  syntax error, unexpected $end in /home/omniphic/public_html/support/include/staff/editticket.inc.php on line 164
+[16-Feb-2011 13:18:08] PHP Parse error:  syntax error, unexpected $end in /home/omniphic/public_html/support/include/staff/editticket.inc.php on line 164
+[16-Feb-2011 13:19:14] PHP Parse error:  syntax error, unexpected $end in /home/omniphic/public_html/support/include/staff/editticket.inc.php on line 164
+[16-Feb-2011 13:20:41] PHP Parse error:  syntax error, unexpected $end in /home/omniphic/public_html/support/include/staff/editticket.inc.php on line 164
+[16-Feb-2011 13:20:54] PHP Parse error:  syntax error, unexpected $end in /home/omniphic/public_html/support/include/staff/editticket.inc.php on line 164
+[16-Feb-2011 13:21:38] PHP Parse error:  syntax error, unexpected $end in /home/omniphic/public_html/support/include/staff/editticket.inc.php on line 164
+[16-Feb-2011 15:05:08] PHP Fatal error:  Call to undefined method Config::getDefaultClientId() in /home/omniphic/public_html/support/include/class.ticket.php on line 1309
+[16-Feb-2011 15:05:16] PHP Fatal error:  Call to undefined method Config::getDefaultClientId() in /home/omniphic/public_html/support/include/class.ticket.php on line 1309
+[16-Feb-2011 15:06:20] PHP Fatal error:  Call to undefined method Config::getDefaultClientId() in /home/omniphic/public_html/support/include/class.ticket.php on line 1309
+[16-Feb-2011 15:11:52] PHP Fatal error:  Call to undefined method Config::getDefaultClientId() in /home/omniphic/public_html/support/include/class.ticket.php on line 1309
+[16-Feb-2011 15:14:05] PHP Fatal error:  Cannot redeclare Config::getDefaultDeptId() in /home/omniphic/public_html/support/include/class.config.php on line 179
+[16-Feb-2011 15:14:06] PHP Fatal error:  Cannot redeclare Config::getDefaultDeptId() in /home/omniphic/public_html/support/include/class.config.php on line 179
+[16-Feb-2011 15:14:10] PHP Fatal error:  Cannot redeclare Config::getDefaultDeptId() in /home/omniphic/public_html/support/include/class.config.php on line 179
+[16-Feb-2011 15:14:15] PHP Fatal error:  Cannot redeclare Config::getDefaultDeptId() in /home/omniphic/public_html/support/include/class.config.php on line 179
+[16-Feb-2011 15:14:18] PHP Fatal error:  Cannot redeclare Config::getDefaultDeptId() in /home/omniphic/public_html/support/include/class.config.php on line 179
+[17-Feb-2011 09:49:23] PHP Parse error:  syntax error, unexpected ';' in /home/omniphic/public_html/support/include/staff/tickets.inc.php on line 212
+[17-Feb-2011 09:49:28] PHP Parse error:  syntax error, unexpected ';' in /home/omniphic/public_html/support/include/staff/tickets.inc.php on line 212
+[17-Feb-2011 13:53:51] PHP Parse error:  syntax error, unexpected T_ELSE in /home/omniphic/public_html/support/include/staff/tickets.inc.php on line 467
+[17-Feb-2011 13:54:00] PHP Parse error:  syntax error, unexpected T_ELSE in /home/omniphic/public_html/support/include/staff/tickets.inc.php on line 467
+[17-Feb-2011 15:39:19] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/omniphic/public_html/support/include/staff/tickets.inc.php on line 466
+[17-Feb-2011 15:39:40] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/omniphic/public_html/support/include/staff/tickets.inc.php on line 466

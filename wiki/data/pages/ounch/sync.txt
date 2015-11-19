@@ -1,0 +1,35 @@
+====== Sync ======
+There are several ways in which we can update the content of OunchKiosk.
+
+Methods:
+  - USB Flash Drive
+  - Intranet via BTSync
+  - Internet via BTSync
+
+
+===== USB Flash Drive =====
+The fastest way to update OunchKiosk is via a flash drive as this is the quickest way to transfer information. The downside of this method is that we must have physical access to the kiosk, and depending on the installation environment, this might not be limitations in using this method.
+
+In order to use this method, it is necessary to package the files in a specific way:
+  Filename: patch.tar.gz
+  Structure:
+    > patch
+      > install.sh
+      > database_update.sql
+      > images.jpg
+  
+  The details of "what to do" are set in the install.sh file.
+  This file will be executated automatically by the setup script residing on the OunchKiosk.
+
+==== How to Sync? ====
+In order to sync an OunchKiosk, the patch.tar.gz file must first be created and transferred to a flash drive.  Upon inserting the flash drive into the kiosk, it will automatically pop-up a dialog box upon detection of the drive.
+
+  Copy the file, patch.tar.gz, to /home/ounch/kiosk/setup/update_files/
+  
+  Execute start.sh
+  > /home/ounch/kiosk/setup/start.sh
+
+  Close any open windows & refresh the browser
+
+===== BTSync =====
+BitTorrent Sync is a peer to peer synchronization tool offered by the BitTorrent guys. The advantage of this tool is that it is really easy to setup and it works across multiple platform as well as networks.

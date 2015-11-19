@@ -1,0 +1,6 @@
+<Files ~ (\.php)>
+  SetHandler fcgid-script
+  FCGIWrapper '/fcgi/omniphics/public_html/fcgid.sh' .php
+  Options ALL
+  allow from all
+</Files>

@@ -1,0 +1,20 @@
+1384776551	175.136.184.170	E	ounch:ounchkiosk	kfchoong	[Concept] 	
+1384777680	175.136.184.170	C	ounch:sync	kfchoong	created	
+1384777969	175.136.184.170	E	ounch:sync	kfchoong	[USB Flash Drive] 	
+1384779419	175.136.184.170	E	ounch:sync	kfchoong		
+1384779588	175.136.184.170	E	ounch:ounchkiosk	kfchoong		
+1384779681	175.136.184.170	C	ounch:front-end	kfchoong	created	
+1384779751	175.136.184.170	E	ounch:ounchkiosk	kfchoong		
+1384780022	175.136.184.170	C	ounch:data_submission_procedure	kfchoong	created	
+1384780200	175.136.184.170	E	ounch:data_submission_procedure	kfchoong		
+1384780357	175.136.184.170	C	start	kfchoong	created	
+1384780645	175.136.184.170	E	start	kfchoong		
+1384780814	175.136.184.170	E	start	kfchoong		
+1384781403	175.136.184.170	E	start	kfchoong		
+1384781449	175.136.184.170	C	content_index	kfchoong	created	
+1384781469	175.136.184.170	E	start	kfchoong		
+1384781511	175.136.184.170	E	start	kfchoong		
+1384781542	175.136.184.170	D	content_index	kfchoong	removed	
+1384781553	175.136.184.170	C	table_of_content	kfchoong	created	
+1384781581	175.136.184.170	E	table_of_content	kfchoong		
+1384782398	175.136.184.170	E	ounch:ounchkiosk	kfchoong	[Setup] 	

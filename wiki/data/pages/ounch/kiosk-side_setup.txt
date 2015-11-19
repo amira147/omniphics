@@ -1,0 +1,19 @@
+====== Kiosk-Side Setup ======
+
+====Installing Server App====
+<code>
+  - Copy File / Unpack Server pack
+  - Create DB and import \database\dev_ounchkiosk_com_ver-.sql
+  - Change application/config/database.php permission to 777
+  - Change Database name in config.txt
+  - Go to http://~/installation/ and fill in the forms
+  - Apply any Patches / Updates
+</code>
+
+====Installing Kiosk App====
+<code>
+  - Copy File / Unpack Kiosk pack
+  - Create DB and import \database\ounchkiosk_com_ver-.sql
+  - Apply any Patches / Updates
+  - Change "Local" and "Remote" urls
+</code>

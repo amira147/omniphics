@@ -1,0 +1,15 @@
+====== OunchKiosk ======
+
+This namespace will contain all technical information relevant to OunchKiosk.
+
+===== Setup =====
+
+Contain Setup instructions on how to install the Cloud Server, OunchKiosk Backend as well as Frontend.
+
+  * [[Front-End]]
+
+===== Concepts =====
+  * [[Sync]]
+
+===== Operations =====
+  * [[Data Submission Procedure]]

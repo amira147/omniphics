@@ -1,0 +1,10 @@
+====== Data Submission Procedure ======
+
+To better coordinate data collection from the client, we have setup a group email address which will forward the client's email to relevant personnel. The purpose of creating this group email is to ensure that there is no single bottle-neck when comes to handling of client's content.
+
+  The group email address : submit@ounch.com
+  Will be forwarded to: KF, Joy & Lishan
+
+After sorting out the content, the email can then be forwarded to different people in the company to perform the actual tasks.
+
+//Do take note that all "request" of work should be submitted to Asana for easier tracking.  As this request is internal, we are not using Ticketing System to handle this.//

@@ -1,0 +1,83 @@
+
+<h1 class="sectionedit1" id="server-side_setup">Server-Side Setup</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "Server-Side Setup" [1-33] -->
+<h2 class="sectionedit2" id="setup_dns">Setup DNS</h2>
+<div class="level2">
+
+<p>
+Each OunchKiosk project will has a domain name assigned to it, e.g. <a href="http://project_name.ounchkiosk.com" class="urlextern" title="http://project_name.ounchkiosk.com"  rel="nofollow">http://project_name.ounchkiosk.com</a>.  This setup is done on the <abbr title="Domain Name System">DNS</abbr> server, through the creating of “A” record.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Setup DNS" [34-235] -->
+<h3 class="sectionedit3" id="login_to_cpreadyspacecommy">Login to cp.readyspace.com.my</h3>
+<div class="level3">
+<pre class="code">User: omniphics
+Add &quot;A&quot; Record to DNS, project_name.ounchkiosk.com, pointing to 117.120.7.35</pre>
+
+</div>
+<!-- EDIT3 SECTION "Login to cp.readyspace.com.my" [236-385] -->
+<h2 class="sectionedit4" id="setup_backend">Setup Backend</h2>
+<div class="level2">
+
+<p>
+We now need to setup the OunchKiosk Webserver to host the project.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Setup Backend" [386-479] -->
+<h3 class="sectionedit5" id="create_source_folder_for_the_project">Create source folder for the project</h3>
+<div class="level3">
+
+<p>
+Login to ounchkiosk.com as “root”
+</p>
+<pre class="code">    - cd /home/ounch/sources
+    - mkdir project_name.ounchkiosk.com
+    - cd project_name.ounchkiosk.com
+    - mkdir 1.x (software version)
+    - ln -s 1.x current
+    - cd ..
+    - chown -R ounch.ounch project_name.ounchkiosk.com</pre>
+
+</div>
+<!-- EDIT5 SECTION "Create source folder for the project" [480-809] -->
+<h3 class="sectionedit6" id="setup_apache_web_server_to_serve_this_new_site">Setup Apache Web Server to serve this new site</h3>
+<div class="level3">
+
+<p>
+Setup Webserver
+</p>
+<pre class="code">    - cd /etc/apache2/sites-available
+    - cp template project_name.ounchkiosk.com
+    - Edit project_name.ounchkiosk.com
+      - Line3: Change &quot;project_name.ounchkiosk.com&quot;
+      - Line 5: Change &quot;/var/www/project_name.ounchkiosk.com&quot;
+    - cd /var/www
+    - ln -s /home/ounch/sources/project_name.ounchkiosk.com/current project_name.ounchkiosk.com</pre>
+
+<p>
+Setup Content Folder
+</p>
+<pre class="code">    - cd /var/www/content
+    - mkdir project_name.ounchkiosk.com
+    - chown www-data.www-data project_name.ounchkiosk.com</pre>
+
+<p>
+Setup Sync Folder
+</p>
+<pre class="code">    - cd /var/www/sync_content
+    - mkdir project_name.ounchkiosk.com
+    - chown www-data.www-data project_name.ounchkiosk.com</pre>
+
+<p>
+Enable new domain in Webserver
+</p>
+<pre class="code">    - a2ensite project_name.ounchkiosk.com
+    - service apache2 restart</pre>
+
+</div>
+<!-- EDIT6 SECTION "Setup Apache Web Server to serve this new site" [810-] -->

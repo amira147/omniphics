@@ -1,0 +1,67 @@
+
+<h1 class="sectionedit1" id="sync">Sync</h1>
+<div class="level1">
+
+<p>
+There are several ways in which we can update the content of OunchKiosk.
+</p>
+
+<p>
+Methods:
+</p>
+<ol>
+<li class="level1"><div class="li"> USB Flash Drive</div>
+</li>
+<li class="level1"><div class="li"> Intranet via BTSync</div>
+</li>
+<li class="level1"><div class="li"> Internet via BTSync</div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT1 SECTION "Sync" [1-172] -->
+<h2 class="sectionedit2" id="usb_flash_drive">USB Flash Drive</h2>
+<div class="level2">
+
+<p>
+The fastest way to update OunchKiosk is via a flash drive as this is the quickest way to transfer information. The downside of this method is that we must have physical access to the kiosk, and depending on the installation environment, this might not be limitations in using this method.
+</p>
+
+<p>
+In order to use this method, it is necessary to package the files in a specific way:
+</p>
+<pre class="code">Filename: patch.tar.gz
+Structure:
+  &gt; patch
+    &gt; install.sh
+    &gt; database_update.sql
+    &gt; images.jpg
+
+The details of &quot;what to do&quot; are set in the install.sh file.
+This file will be executated automatically by the setup script residing on the OunchKiosk.</pre>
+
+</div>
+<!-- EDIT2 SECTION "USB Flash Drive" [173-850] -->
+<h3 class="sectionedit3" id="how_to_sync">How to Sync?</h3>
+<div class="level3">
+
+<p>
+In order to sync an OunchKiosk, the patch.tar.gz file must first be created and transferred to a flash drive.  Upon inserting the flash drive into the kiosk, it will automatically pop-up a dialog box upon detection of the drive.
+</p>
+<pre class="code">Copy the file, patch.tar.gz, to /home/ounch/kiosk/setup/update_files/
+
+Execute start.sh
+&gt; /home/ounch/kiosk/setup/start.sh</pre>
+<pre class="code">Close any open windows &amp; refresh the browser</pre>
+
+</div>
+<!-- EDIT3 SECTION "How to Sync?" [851-1283] -->
+<h2 class="sectionedit4" id="btsync">BTSync</h2>
+<div class="level2">
+
+<p>
+BitTorrent Sync is a peer to peer synchronization tool offered by the BitTorrent guys. The advantage of this tool is that it is really easy to setup and it works across multiple platform as well as networks.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "BTSync" [1284-] -->
